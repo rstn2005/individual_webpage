@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="arawaza_logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="shop.css">
+    <title>Shop - ARAWAZA</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><img src="arawaza_logo.png" alt="Store Logo"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <input type="text" placeholder="Search...">
+            <a href="login.html">Login</a>
+            <a href="cart.html"><img src="cart.png" alt="Cart Logo"></a>
+        </div>
+    </header>
+
+    <section class="featured-collection">
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="shin_blue-arawaza.jpg" alt="Product 1">
+                <h3>ARAWAZA - Blue Shin Guard & Foot Guard, Karate Kumite</h3>
+                <p>$78.17</p>
+
+                <!-- Size Dropdown -->
+                <label for="size1">Size:</label>
+                <select id="size1" name="size">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+
+                <!--Choose how many Items you want-->
+                <label for="qty-product1">Quantity:</label>
+                <input type="number" id="qty-product1" name="quantity" min="1" value="1">
+
+                <!--Add to Cart Process-->
+                <a href="cart.html" class="button add-to-cart" 
+                    data-name="ARAWAZA - Blue Shin Guard & Foot Guard, Karate Kumite"
+                    data-size-id="size1"
+                    data-qty-id="qty-product1"
+                    data-price="78.17">Add to Cart</a>
+            </div>
+
+            
+            <div class="product-item">
+                <img src="arawaza-blue-fist-gear.jpg" alt="Product 2">
+                <h3>ARAWAZA - Blue Fist Gear, Karate Kumite</h3>
+                <p>$49.99</p>
+
+                <label for="size2">Size:</label>
+                <select id="size2" name="size">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+
+                <label for="qty-product2">Quantity:</label>
+                <input type="number" id="qty-product2" name="quantity" min="1" value="1">
+
+                <a href="cart.html" class="button add-to-cart" 
+                    data-name="ARAWAZA - Blue Fist Gear, Karate Kumite"
+                    data-size-id="size2"
+                    data-qty-id="qty-product2"
+                    data-price="$49.99">Add to Cart</a>
+                
+            </div>
+            
+            <div class="product-item">
+                <img src="shin_red-arawaza.jpg" alt="Product 3">
+                <h3>ARAWAZA - Red Shin Guard & Foot Guard, Karate Kumite</h3>
+                <p>$78.17</p>
+
+                <label for="size3">Size:</label>
+                <select id="size3" name="size">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+
+                <label for="qty-product3">Quantity:</label>
+                <input type="number" id="qty-product3" name="quantity" min="1" value="1">
+
+                <a href="cart.html" class="button add-to-cart" 
+                    data-name="ARAWAZA - Red Shin Guard & Foot Guard, Karate Kumite" 
+                    data-size-id="size3"
+                    data-qty-id="qty-product3"
+                    data-price="$78.17">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="arawaza-red-fist-gear.jpg" alt="Product 4">
+                <h3>ARAWAZA - Red Fist Gear, Karate Kumite</h3>
+                <p>$49.99</p>
+
+                <label for="size4">Size:</label>
+                <select id="size4" name="size">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                
+                <label for="qty-product4">Quantity:</label>
+                <input type="number" id="qty-product4" name="quantity" min="1" value="1">
+
+                <a href="cart.html" class="button add-to-cart" 
+                    data-name="ARAWAZA - Red Fist Gear, Karate Kumite" 
+                    data-size-id="size4"
+                    data-qty-id="qty-product4"
+                    data-price="$49.99">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="arawaza-women-body-protector.jpg" alt="Product 5">
+                <h3>ARAWAZA - Women Body Protector  Competition , Karate Kumite</h3>
+                <p>$73.88</p>
+
+                <label for="size5">Size:</label>
+                <select id="size5" name="size">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+
+                <label for="qty-product5">Quantity:</label>
+                <input type="number" id="qty-product5" name="quantity" min="1" value="1">
+
+                <a href="cart.html" class="button add-to-cart" 
+                    data-name="ARAWAZA - Women Body Protector  Competition , Karate Kumite"
+                    data-size-id="size5"
+                    data-qty-id="qty-product5"
+                    data-price="$73.88">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="arawaza-men-body-protector.jpg" alt="Product 6">
+                <h3>ARAWAZA - Men Body Protector Competition, Karate Kumite</h3>
+                <p>$123.14</p>
+
+                <label for="size6">Size:</label>
+                <select id="size6" name="size">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+
+                <label for="qty-product6">Quantity:</label>
+                <input type="number" id="qty-product6" name="quantity" min="1" value="1">
+
+                <a href="cart.html" class="button add-to-cart" 
+                    data-name="ARAWAZA - Women Body Protector  Competition , Karate Kumite"
+                    data-size-id="size6"
+                    data-qty-id="qty-product6"
+                    data-price="$73.88">Add to Cart</a>
+
+            </div>
+
+            <div class="product-item">
+                <img src="uniform-combo-kit-kumite-deluxe-evo-arawaza.jpg" alt="Product 7">
+                <h3>ARAWAZA - Deluxe Evo WKF Combo Kit, Karate Kumite</h3>
+                <p>$265.00</p>
+
+                <label for="size7">Size:</label>
+                <select id="size7" name="size">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+
+                <label for="qty-product7">Quantity:</label>
+                <input type="number" id="qty-product7" name="quantity" min="1" value="1">
+
+                <a href="cart.html" class="button add-to-cart"
+                    data-name="ARAWAZA - Deluxe Evo WKF Combo Kit, Karate Kumite"
+                    data-size-id="size7"
+                    data-qty-id="qty-product7"
+                    data-price="$265.00">Add to Cart</a>
+            </div>
+
+            <div class="product-item">
+                <img src="belt-kumite-wkf-approved-arawaza.jpg" alt="Product 7">
+                <h3>ARAWAZA - WKF approved Cotton Kumite Belts, Karate</h3>
+                <p>$16.94</p>
+
+                <label for="size8">Size:</label>
+                <select id="size8" name="size">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+
+                <label for="qty-product8">Quantity:</label>
+                <input type="number" id="qty-product8" name="quantity" min="1" value="1">
+
+                <a href="cart.html" class="button add-to-cart"
+                    data-name="ARAWAZA - WKF approved Cotton Kumite Belts, Karate"
+                    data-size-id="size8"
+                    data-qty-id="qty-product8"
+                    data-price="$16.94">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+        <p>&copy; 2025 ARAWAZA Online Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cartButtons = document.querySelectorAll('.add-to-cart');
+
+            cartButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    const sizeId = button.getAttribute('data-size-id');
+                    const qtyId = button.getAttribute('data-qty-id');
+                    const name = button.getAttribute('data-name');
+                    const price = parseFloat(button.getAttribute('data-price').replace('$', ''));
+
+                    const size = document.getElementById(sizeId).value;
+                    const quantity = parseInt(document.getElementById(qtyId).value);
+
+                    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+                    // Check if item with same name and size exists
+                    const existingItemIndex = cart.findIndex(item => item.name === name && item.size === size);
+
+                    if (existingItemIndex !== -1) {
+                        cart[existingItemIndex].quantity += quantity;
+                    } else {
+                        cart.push({ name, size, price, quantity });
+                    }
+
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    alert(`${name} (Size: ${size}, Quantity: ${quantity}) added to cart!`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

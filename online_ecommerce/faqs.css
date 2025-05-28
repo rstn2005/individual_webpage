@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body and global styles */
+body {
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    background-image: url(bg2.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    padding: 0.5rem;
+    height: 60px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 45px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: red;
+}
+
+header .header-right input {
+    padding: 0.5rem;
+    margin-right: 10px;
+}
+
+header .header-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+header .header-right a  img {
+    height: 25px;
+    vertical-align: middle;
+}
+
+header .header-right a:hover {
+    color: red;
+}
+.faq-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.faq-item {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-left: 5px solid ;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.faq-item h2 {
+  margin-top: 0;
+  color: #0052cc;
+}
+
+.faq-item p {
+  margin-bottom: 0;
+}
+
+a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+footer ul {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer ul li a:hover {
+    color: red;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+}
+
+footer .social-media img {
+    width: 30px;
+    height: 30px;
+}

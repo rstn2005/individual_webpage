@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="basket.png" type="image/x-icon"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Shopping Cart - ARAWAZA</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><img src="arawaza_logo.png" alt="Store Logo"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="aboutus.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Your Shopping Cart</h1>
+    <main>
+
+    <table id="cart-table" border="1">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Size</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Items will be injected here by JS -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" style="text-align:right;"><strong>Total:</strong></td>
+                <td id="total-price"><strong>$0.00</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <div class="cart-buttons">
+        <button class="clear" onclick="clearCart()">Clear Cart</button>
+        <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+    </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const tbody = document.querySelector('#cart-table tbody');
+            const totalCell = document.getElementById('total-price');
+
+            let total = 0;
+
+            cart.forEach(item => {
+            const subtotal = item.price * item.quantity;
+            total += subtotal;
+
+            const row = document.createElement('tr');
+            row.innerHTML = `
+            <td>${item.name}</td>
+            <td>${item.size}</td>
+            <td>$${item.price.toFixed(2)}</td>
+            <td>${item.quantity}</td>
+            <td>$${subtotal.toFixed(2)}</td>
+            `;
+            tbody.appendChild(row);
+            });
+
+            totalCell.innerHTML = `<strong>$${total.toFixed(2)}</strong>`;
+        });
+    </script>
+    
+    <script>
+        function clearCart() {
+        localStorage.removeItem('cart');
+        location.reload();
+        }
+    </script>
+    <footer>
+        <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+        <p>&copy; 2025 ARAWAZA Online Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
